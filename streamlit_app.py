@@ -50,8 +50,7 @@ except URLError as e:
 streamlit.write('The user entered ', fruit_choice)
 
 
-# dont't run anything past here while we troubleshoot
-streamlit.stop()
+
 
 streamlit.header("The fruit load list contains:")
 # Snowflake-related functions
@@ -66,7 +65,8 @@ if streamlit.button('Get Fruit Load List'):
    my_data_rows = get_fuit_load_list()
    streamlit.text(my_data_rows)
 
-
+# dont't run anything past here while we troubleshoot
+streamlit.stop()
  
 
 
